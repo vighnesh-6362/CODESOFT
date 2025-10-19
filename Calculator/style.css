@@ -1,0 +1,143 @@
+/* Updated color palette and typography for a more attractive design */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+:root {
+  --background: #f8fafc; /* Light gray background */
+  --foreground: #1e293b; /* Dark blue-gray for text */
+  --card: #ffffff; /* White for calculator box */
+  --card-foreground: #1e293b; /* Dark blue-gray for card text */
+  --primary: #6366f1; /* Indigo for primary actions */
+  --primary-foreground: #ffffff; /* White for primary button text */
+  --secondary: #e0e7ff; /* Light indigo for secondary actions */
+  --secondary-foreground: #4338ca; /* Darker indigo for secondary button text */
+  --accent: #facc15; /* Yellow for accent elements */
+  --accent-foreground: #1e293b; /* Dark blue-gray for accent text */
+  --destructive: #ef4444; /* Red for destructive actions */
+  --destructive-foreground: #ffffff; /* White for destructive button text */
+  --border: #e2e8f0; /* Light gray for borders */
+  --input: #cbd5e1; /* Gray for input fields */
+  --ring: #a5b4fc; /* Light blue for focus rings */
+  --radius: 0.75rem; /* Rounded corners */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background: var(--background);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calc-box {
+  width: 360px;
+  padding: 25px;
+  border-radius: var(--radius);
+  background: var(--card);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  border: 1px solid var(--border);
+}
+
+#calc-display {
+  width: 100%;
+  padding: 18px;
+  margin-bottom: 20px;
+  font-size: 28px;
+  text-align: right;
+  color: var(--foreground);
+  background: var(--input);
+  border: 1px solid var(--border);
+  border-radius: calc(var(--radius) - 4px);
+  outline: none;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.06);
+}
+
+#calc-display::placeholder {
+  color: #94a3b8; /* Adjusted placeholder color */
+}
+
+.button-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+.btn,
+.operator,
+.equalBtn {
+  width: 70px;
+  height: 60px;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: calc(var(--radius) - 4px);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+  border: none;
+}
+
+.btn {
+  background: var(--secondary);
+  color: var(--secondary-foreground);
+}
+
+.btn:hover {
+  background: #c7d2fe; /* Adjusted hover color */
+}
+
+.btn:active {
+  background: #e0e7ff; /* Adjusted active color */
+  transform: scale(0.95);
+}
+
+.operator {
+  background: var(--primary);
+  color: var(--primary-foreground);
+}
+
+.operator:hover {
+  background: #4f46e5; /* Adjusted hover color */
+}
+
+.operator:active {
+  background: #6366f1; /* Adjusted active color */
+  transform: scale(0.95);
+}
+
+.equalBtn {
+  background: var(--destructive);
+  color: var(--destructive-foreground);
+}
+
+.equalBtn:hover {
+  background: #dc2626; /* Adjusted hover color */
+}
+
+.equalBtn:active {
+  background: #ef4444; /* Adjusted active color */
+  transform: scale(0.95);
+}
+
+footer {
+  margin-top: 25px;
+  font-size: 14px;
+  color: var(--foreground);
+}
+footer:hover {
+  color: var(--primary);
+}
