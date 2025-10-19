@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" 
+          content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" 
+          href=
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+          integrity=
+"sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+             crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navbar header section -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <h2 class="logo-heading">Sindhu R</h2>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <i class="fas fa-bars hamburger-icon"></i>
+                <i class="fas fa-times cross-icon"></i>
+            </div>
+            <div class="menu">
+                <ul class="menu-list">
+                    <li class="menu-list-items">
+                        <a class="links" href="#home">
+                              Home
+                          </a>
+                    </li>
+                    <li class="menu-list-items">
+                        <a class="links" href="#portfolio">
+                              Skills
+                          </a>
+                    </li>
+                    <li class="menu-list-items">
+                        <a class="links" href="#about">
+                              About
+                          </a>
+                    </li>
+                    <li class="menu-list-items">
+                        <a class="links" href="#services">
+                              Projects
+                          </a>
+                    </li>
+                    <li class="menu-list-items">
+                        <a class="links" href="#contact">
+                              Contact Me
+                          </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main hero banner -->
+    <section id="home" class="hero">
+        <div class="intro">
+            <div class="headings">
+                <h3 class="greet-heading">Hello, I'm</h3>
+                <h1 class="my-heading">Sindhu R</h1>
+                <h4 class="sub-heading">
+                    I am pursuing degree in Computer Science at SJCE.
+                </h4>
+            </div>
+            <div class="intro-buttons">
+                <button class="btn common-btn">Hire Me</button>
+                <a href="./Images/sindhu.pdf">
+                <button class="btn ghost-btn">Get Resume</button> </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio" id="portfolio">
+        <div class="portfolio-heading">
+            <h1 class="my-heading text-center">My Skills</h1>
+        </div>
+        <div class="portfolio-content">
+            <div class="my-row">
+                <div class="my-col">
+                    <div class="my-card port-card">
+                        <div class="image">
+                            <img src="./Images/html-5.png" 
+                                 alt="Web Design Image">
+                        </div>
+                        <h3 class="greet-heading blue-text">HTML</h3>
+                        <p class="small-para blue-text">Proficient in HTML, with a solid understanding of structuring web content effectively. Experienced in creating responsive layouts and optimizing code for accessibility and SEO.</p>
+                    </div>
+                </div>
+                <div class="my-col">
+                    <div class="my-card port-card">
+                        <div class="image">
+                            <img src="./Images/css.png" 
+                                 alt="Web Development Image">
+                        </div>
+                        <h3 class="greet-heading blue-text">
+                              CSS
+                          </h3>
+                        <p class="small-para blue-text">Proficient in CSS, with the ability to design and style responsive. 
+                          Skilled in layout techniques,and ensuring cross-browser compatibility for a user experience.</p>
+                    </div>
+                </div>
+                <div class="my-col">
+                    <div class="my-card port-card">
+                        <div class="image">
+                            <img src="./Images/js.png" alt="SEO Image">
+                        </div>
+                        <h3 class="greet-heading blue-text">Javascript</h3>
+                        <p class="small-para blue-text">Proficient in JavaScript, with the ability to create dynamic and interactive web applications. Skilled in DOM manipulation,and integrating APIs to enhance functionality and user experience.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="my-row">
+                <div class="my-col">
+                    <div class="my-card port-card">
+                        <div class="image">
+                            <img src="./Images/java.png" 
+                                 alt="Content Writting Image">
+                        </div>
+                        <h3 class="greet-heading blue-text">
+                              Java
+                          </h3>
+                        <p class="small-para blue-text">Proficient in Java, with a solid understanding of OOP principles. Skilled in developing robust, scalable applications, and experienced in using Java for backend development and software engineering projects.</p>
+                    </div>
+                </div>
+                <div class="my-col">
+                    <div class="my-card port-card">
+                        <div class="image">
+                            <img src="./Images/hierarchical-structure.png" 
+                                 alt="Wordpress Image">
+                        </div>
+                        <h3 class="greet-heading blue-text">
+                              DSA
+                          </h3>
+                        <p class="small-para blue-text">Proficient in DSA, with the ability to solve complex problems efficiently. Skilled in implementing various data structures like arrays, linked lists, and trees, and applying algorithms to optimize code performance.
+                            
+                          </p>
+                    </div>
+                </div>
+                <div class="my-col">
+                    <div class="my-card port-card">
+                        <div class="image">
+                            <img src="./Images/github.png" 
+                                 alt="Video Editing Image">
+                        </div>
+                        <h3 class="greet-heading blue-text">
+                              Git&GitHub
+                          </h3>
+                        <p class="small-para blue-text">Proficient in using GitHub for version control and collaboration on software projects. Skilled in managing repositories, branching, merging, and handling pull requests to maintain organized and efficient workflows.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="about-text">
+            <h1 class="my-heading">About Me</h1>
+            <p class="lead-para">
+              I am currently pursuing my final year of CS engineering, with a strong passion for web development. Over the course of my studies, I've gained hands-on experience in building dynamic and responsive websites using HTML, CSS,JavaScript and Django. I have also worked on various projects that demonstrate my ability to create user-friendly interfaces and robust web applications. 
+            </p>
+            <h3 class="my-heading1">Education</h3><br>
+            <br>Sri Jayachamarajendra College of Engineering, JSS Science and Technology University, Mysuru.<br>
+            BE Computer Science(pursuing).<br><br>
+            BGS Independent PU College, K R Pet.<br>
+            College.<br><br>
+            Sri Adichunchanagiri English Medium High School, K R Pet<br>
+            SSLC.<br><br>
+            </div>
+        </div>
+        
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="services-heading">
+            <h1 class="my-heading text-center">My Projects</h1>
+        </div>
+        <div class="services-content">
+            <div class="my-row">
+                <div class="my-col">
+                    <div class="my-card">
+                        <div class="icon">
+                          <img src="./Images/wonder world.png" class="project-img">
+                            
+                        </div><br>
+                        
+                        <h3 class="greet-heading blue-text">Wonder World</h3>
+                        <p class="small-para">
+                          The 7 Wonders of the World is an interactive platform showcasing the marvels of the ancient and modern world. Built using HTML, CSS, and JavaScript, this website offers a visually stunning and engaging experience. It features detailed information, captivating images, and quizes for each of the seven wonders, providing users with both educational content and visual appeal.
+                        
+                        </p>
+                    </div>
+                </div>
+                <div class="my-col">
+                    <div class="my-card">
+                        <div class="icon">
+                          <img src="./Images/To do list.png" class="project-img">
+                        </div><br>
+                        <h3 class="greet-heading blue-text">
+                              To Do List
+                          </h3>
+                        <p class="small-para">
+                          The To-Do List Website is a practical and user-friendly application designed to help users manage their tasks efficiently. Created with HTML, CSS, and JavaScript, this website allows users to add, edit, and remove tasks, as well as mark them as complete. Its intuitive interface and dynamic functionality make it an essential tool for staying organized and productive.
+
+
+                        </p>
+                    </div>
+                </div>
+                <div class="my-col">
+                    <div class="my-card">
+                        <div class="icon">
+                          <img src="./Images/Dice roller.png" class="project-img" >
+                        </div><br>
+                        <h3 class="greet-heading blue-text">Dice Roller</h3>
+                        <p class="small-para">
+                          The Dice Roller Website is a fun and interactive tool that simulates rolling dice. Developed using HTML, CSS, and JavaScript, it provides users with a virtual dice rolling experience, complete with customizable options for the number of dice and sides. The website's engaging interface delivers random results with each roll, making it perfect for games and decision-making.
+
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="my-row">
+                <div class="my-col">
+                    <div class="my-card">
+                        <div class="icon">
+                          <img src="./Images/Hellotalk.png" class="project-img">
+                        </div><br>
+                        <h3 class="greet-heading blue-text">
+                              Language Learning Platform
+                          </h3>
+                        <p class="small-para">
+                          The Language Learning Website is an educational platform designed to facilitate language acquisition. Developed with HTML and CSS, it features a clean, user-friendly interface that presents language lessons, practice exercises. The website’s design enhances the learning experience, making it easier for users to engage with and progress in their language studies.
+
+
+                        </p>
+                    </div>
+                </div>
+                <div class="my-col">
+                    <div class="my-card">
+                        <div class="icon">
+                          <img src="./Images/calculator.png" class="project-img">
+                        </div><br>
+                        <h3 class="greet-heading blue-text">
+                              calculator
+                          </h3>
+                        <p class="small-para">
+                            I developed a fully functional calculator using HTML, CSS, and JavaScript, featuring a user-friendly interface designed with CSS. The project involved writing JavaScript code to handle all basic arithmetic operations, ensuring accurate and responsive calculations. This project allowed me to enhance my front-end development skills by combining the design and functionality of a practical tool.
+                     </p>
+                    </div>
+                </div>
+                <div class="my-col">
+                    <div class="my-card">
+                        <div class="icon">
+                          <img src="./Images/landing page.png" class="project-img">
+                        </div><br>
+                        <h3 class="greet-heading blue-text">
+                              Coding Courses Landing Page
+                          </h3>
+                        <p class="small-para">
+                          The Coding Courses Landing Page is a well-designed promotional website crafted with HTML and CSS. It features a sleek, visually appealing layout that highlights various coding courses offered, including key details and benefits. The page is optimized for user engagement, with clear calls to action and an intuitive design that encourages visitors to explore and enroll in the courses.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact me section -->
+    <section class="contact" id="contact">
+        <div class="contact-heading">
+            <h1 class="my-heading text-center">Contact Me</h1>
+        </div>
+    
+        <div class="contact-content">
+            <div class="contact-form-container">
+                <h1 class="greet-heading">Get In Touch</h1>
+                <form class="contact-form" action="https://getform.io/f/8ca660ec-05bb-4e2e-969e-b2e7cad2aadc" method="POST" id="my-form">
+                    <input class="form-controls" type="text"  required="Name"
+                           placeholder="Your Name">
+                    <input class="form-controls" type="text" required="Email"
+                           placeholder="Your Email">
+                    <input class="form-controls" type="text" required="Phone"
+                           placeholder="Your Phone">
+                    <textarea class="form-controls" 
+                              placeholder="Write your message" required="Message"
+                              name="message" id="" cols="30"
+                              rows="10">
+                      </textarea>
+                    <input class="form-btn btn common-btn" 
+                           type="submit" value="Send Message">
+                </form>
+            </div>
+            <div class="contact-details">
+                <h1 class="greet-heading">My Contact Details</h1>
+                <div class="details">
+                    <h5 class="contact-heading">EMAIL</h5>
+                    <p class="contact-text">sindhurgowda0117@gmail.com</p>
+                </div>
+                
+                <div class="details">
+                    <h5 class="contact-heading">ADDRESS</h5>
+                    <p class="contact-text">K R Pet</p>
+                    <p>Mandya</p>
+                    <p>Karnataka</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer section -->
+    <footer class="footer">
+        <div class="footer-content text-center">
+            <h4>
+                Created by Sindhu R| © 2025 All rights reserved 
+            </h4>
+            <div class="social-links">
+                <div class="footer-menu">
+                    <ul class="footer-menu-list">
+                        <li class="footer-list-items">
+                            <a class="footer-links" href="https://www.facebook.com/rohit.sanaprs.1">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li class="footer-list-items">
+                            <a class="footer-links" href="https://github.com/RohitSanap07">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </li>
+                        <li class="footer-list-items">
+                            <a class="footer-links" href="https://www.instagram.com/rohit_sanap_007/">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li class="footer-list-items">
+                            <a class="footer-links" href="https://www.linkedin.com/in/rohit-sanap-10989724a">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src=
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"
+        integrity=
+"sha512-uKQ39gEGiyUJl4AI6L+ekBdGKpGw4xJ55+xyJG7YFlJokPNYegn9KwQ3P8A7aFQAUtUsAQHep+d/lrGqrbPIDQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+      </script>
+    <script src="script.js"></script>
+</body>
+
+</html>
